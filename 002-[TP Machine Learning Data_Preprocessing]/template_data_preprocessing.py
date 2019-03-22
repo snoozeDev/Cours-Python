@@ -13,4 +13,4 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 
 # import dataset
-df = pd.read_csv("Data.csv")
+dataset = pd.read_csv("Data.csv")
