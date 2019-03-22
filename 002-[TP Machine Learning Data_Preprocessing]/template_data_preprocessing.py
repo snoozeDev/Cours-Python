@@ -18,10 +18,14 @@ import seaborn as sns
 # ==============
 
 # import dataset (REPLACE WITH PATH TO YOUR OWN DATAFILE)
-dataset = pd.read_csv("./002-[TP Machine Learning Data_Preprocessing]/Data.csv")
+dataset = pd.read_csv("./Data.csv")
 
 X = dataset.iloc[:, :-1].values             # X train (Features)
 Y = dataset.iloc[:, -1].values              # Y train (Labels)
+
+# ==============
+# 2. Exploration  des données
+# ==============
 
 # Structure
 dataset.head()
@@ -30,7 +34,7 @@ dataset.count()
 print(dataset.columns)
 print(dataset.shape)
 print(dataset.dtypes)
-# ==============
-# 2. Exploration  des données
-# ==============
 
+# Label: purchased
+dataset.Purchased.value_counts()
+dataset["Purchased"].hist()
