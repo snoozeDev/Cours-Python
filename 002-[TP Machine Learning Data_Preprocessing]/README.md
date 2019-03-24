@@ -1,4 +1,8 @@
-# Méthodologie Data Science
+# Partie 2
+
+> VOIR LE [CODE](/template_data_preprocessing.py)
+
+## Méthodologie Data Science
 
 1. Comprendre le contexte et cas d'usages
 2. Exploration  des données
