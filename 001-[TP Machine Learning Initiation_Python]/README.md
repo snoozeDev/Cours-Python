@@ -1,5 +1,7 @@
 # Cours Predictive Analytics
 
+> VOIR LE [CODE](./Exercices.py)
+
 ## Intro Python
 
 ### Pandas set-up
@@ -10,11 +12,13 @@ import pandas as pd
 df = pd.read_table('./heart.txt', sep='\t', header=0)
 ```
 
-With these you load Pandas library & load a file in a **dataframe**.
+Avec ces lignes vous invoquez la librarie Pandas et stockez les données d'un ficher `heart.txt` dans un **dataframe**.
 
-`import pandas as pd` loads pandas library & sets name to `pd`.
+`import pandas as pd` invoque la librairie Pandas et lui assigne le nom `pd` .
 
-`pd.readtable({{file_url}}, sep={{separator}}, header={{header_row}})` is the method for  loading a file with Pandas. It takes 3 arguments:
+`pd.readtable({{file_url}}, sep={{separator}}, header={{header_row}})` est la méthode pour charger un fichier avec Pandas. 
+
+Elle prend 3 arguments :
 
 | argument | example | type | description |
 | -------- | ------- | --- | ----------- |
@@ -37,12 +41,12 @@ print(df.dtypes)                        # Affiche les types correspondants a cha
 ```
 
 #### Functions
-- `df.describe()` gives general stats on dataframe
-- `df.head()` returns 5 first lines of dataframe
-- `df.info()` returns information on columns
+- `df.describe()` renvoie des informations générales sur les données
+- `df.head()` renvoie les 5 premières lignes du dataframe
+- `df.info()` renvoie des informations générales sur le colonnes
 #### Properties
-- `df.shape` returns dataframe shape (lines, columns)
-- `df.dtypes` returns types by columns
+- `df.shape` renvoie la "forme" du dataframe ( _x_ lines, _y_ columns)
+- `df.dtypes` renvoie les différents types par colonnes
 
 ## Column specific functions
 ```python
@@ -54,6 +58,8 @@ print(df['age'][:3])                    # Affiche les 3 premières ligne de la c
 print(df['sexe'].value_counts())        # Compte les valeurs d'une colonne
 
 ```
+
+La notation `df[ {{NOM_DE_COLONNE}} ]` permet de faire référence à une ou plusieurs colonnes.
 
 ### iloc vs loc
 ```python
@@ -67,6 +73,16 @@ print(df.iloc[0:5,[0,2,4]])                     # Affiche les 5 premières ligne
 
 ```
 
+`iloc[]` permet de trouver des données grâce aux indèxes des lignes et des colonnes.
+
+`loc[]` permet de trouver des données grâce aux noms des colones
+
+Chacune de ces méthodes peuvent être utilisées comme filtre. Par exemple :
+
+```python
+print(df.loc[df['sexe'] == "masculin", :])      # Affiche toutes les lignes où le sexe est masculin
+```
+
 ## Filtres
 ```python
 import pandas as pd
@@ -75,3 +91,5 @@ df = pd.read_table('./heart.txt', sep='\t', header=0)
 # Addition de filtres
 print(df.loc[(df['typedouleur'] == "A") & (df['angine'] == "oui"), :])
 ```
+
+Les filtres peuvent être combinés.
