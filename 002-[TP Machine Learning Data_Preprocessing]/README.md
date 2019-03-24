@@ -1,6 +1,6 @@
 # Partie 2
 
-> VOIR LE [CODE](/template_data_preprocessing.py)
+> VOIR LE [CODE](./template_data_preprocessing.py)
 
 ## Méthodologie Data Science
 
