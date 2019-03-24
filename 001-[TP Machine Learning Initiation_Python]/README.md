@@ -1,4 +1,4 @@
-# Cours Predictive Analytics
+# Partie 1
 
 > VOIR LE [CODE](./Exercices.py)
 
