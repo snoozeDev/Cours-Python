@@ -11,7 +11,7 @@ Created on Fri Mar  8 12:57:34 2019
 # ===================
 import pandas as pd                     # Import librairie pandas
 
-df = pd.read_table('./heart.txt', sep='\t', header=0)   # Pandas : charger un fichier dans pandas
+df = pd.read_table('/Users/Jb/Documents/Cours Machine Learning/TP Machine Learning/001-[TP Machine Learning Initiation_Python]/heart.txt', sep='\t', header=0)   # Pandas : charger un fichier dans pandas
 
 # ===================
 # Fonctions pandas
