@@ -23,7 +23,7 @@ import seaborn as sns
 """   ------------2.	Comprendre le contexte et cas d’usage -------"""
 # Importer le dataset
 # (Remplacer avec le chemin d'accès avec le jeu de données voulu)
-dataset = pd.read_csv("002-[TP Machine Learning Data_Preprocessing]/Data.csv")
+dataset = pd.read_csv("003-[TP Machine Learning Regression_lineaire]/Salary_Data.csv")
 # créer la matrice des variables explicatives ( features)
 X = dataset.iloc[:, :-1].values
 # creer le vecteur de la variable expliquée ( Label)
