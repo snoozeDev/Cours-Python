@@ -79,26 +79,26 @@
 
 ## Supervisé
 
-	- **Classification** or **regression** problems
-		- **Regression** prediction variable numerique
-		- **Classification** prediction oui/non
-	- besoin d’une **variable de contrôle** [_label_]
-	- **Feature** // propriétés (surface, nb de chambres, geoloc)
-	- **Label** // valeur (prix)
-	- **XTrain** // Features du Training set
-	- **YTrain** // Label du Training set
-	- **XTest** // Feature de l’Input data
-	- **YPred** // Label de l’Input data (résultat)
+- **Classification** or **regression** problems
+	- **Regression** prediction variable numerique
+	- **Classification** prediction oui/non
+- besoin d’une **variable de contrôle** [_label_]
+- **Feature** // propriétés (surface, nb de chambres, geoloc)
+- **Label** // valeur (prix)
+- **XTrain** // Features du Training set
+- **YTrain** // Label du Training set
+- **XTest** // Feature de l’Input data
+- **YPred** // Label de l’Input data (résultat)
 
 
 ## Non supervisé
 
-	- **Clustering** or **anomaly detection** problems
-	- Prend en input que des datasets contenant uniquement des Features (pas de Label)
-	- Pas de notion de classe
-	- Détecte les similarité pour créer des groupes
-	- ML apprend afin de génèrer des **MODELS** qui sont utilisés pour traités de nouvelles données
-	- **Features vectors** //
+- **Clustering** or **anomaly detection** problems
+- Prend en input que des datasets contenant uniquement des Features (pas de Label)
+- Pas de notion de classe
+- Détecte les similarité pour créer des groupes
+- ML apprend afin de génèrer des **MODELS** qui sont utilisés pour traités de nouvelles données
+- **Features vectors** //
 
 
 #### [OPTION] Systèmes de recommandation
