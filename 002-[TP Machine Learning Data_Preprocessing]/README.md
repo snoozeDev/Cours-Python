@@ -13,7 +13,7 @@
 Diviser la BDD (base de données) entre un jeu **d'apprentissage** et un jeu de **test**.
 
 Apprentissage : 
-- `Xtrain` - Features 
+- `Xtrain` - Features (variables explicatrices) 
 - `Ytrain` - Labels
 
 Test  :
