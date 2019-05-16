@@ -8,4 +8,4 @@ Utile pour des problèmes de types 1 ou 0
 
 `p` = 1 / ( 1 + `e^-1` )
 
-Une regression logistqie permet d'estimer la probabilité
+Une regression logistqie permet d'estimer **une probabilité**
